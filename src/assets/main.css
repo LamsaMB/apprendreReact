@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h1 , div , p {
+    color: white;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: gray;
+    height: 100vh;
+}
+.compteur {
+    background-color: brown;
+    width: 200px;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+.compteur button {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+}
+
+.compteur p.erreur {
+    color: green;
+}
+
+.post {
+    min-width: 40%;
+    background-color: aliceblue;
+    min-height: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.active {
+    background-color: burlywood;
+}
+.post p {
+    color: black;
+}
+.boutons{
+    margin-top: 15px;
+}
+.boutons button {
+    border-radius: 10px;
+}
+.boutons .like {
+    margin-right: 10px;
+    min-width: 9vh;
+    min-height: 4vh;
+}
+.boutons .delete {
+    min-width: 9vh;
+    min-height: 4vh;
+    background-color: brown;
+}
+.like p {
+    color : black
+}
