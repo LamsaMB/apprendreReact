@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Element from './composant/element'
 import Titre from './composant/titre'
+import { Link } from 'react-router-dom'
 
 
 export default function App() {
@@ -49,8 +50,10 @@ export default function App() {
     }
     const postliker = posts.filter(p=> p.liker)
   return (
+    
     <div>
-
+        < Link to='apropos'>A propos</Link>
+        < Link to='listearticle'>Les articles</Link>
         <Titre  number = {postliker.length}/>
         {
             posts.map(p => <Element data = {p} key ={p.id} Liker={Liker} effacer = {supprimer}/> )
